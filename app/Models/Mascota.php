@@ -27,9 +27,6 @@ class Mascota extends Model
         'peso' => 'decimal:2',
     ];
 
-    /**
-     * Relación: Una mascota tiene muchas consultas de atención.
-     */
     public function consultas(): HasMany
     {
         return $this->hasMany(Consulta::class, 'mascota_id');

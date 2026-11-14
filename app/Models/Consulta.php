@@ -27,9 +27,6 @@ class Consulta extends Model
         'costo' => 'decimal:2',
     ];
 
-    /**
-     * Relación: Una consulta pertenece a una mascota.
-     */
     public function mascota(): BelongsTo
     {
         return $this->belongsTo(Mascota::class, 'mascota_id');
