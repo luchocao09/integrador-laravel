@@ -5,13 +5,13 @@
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
-        <h2 class="h3 fw-bold mb-1 text-dark">
-            <i class="bi bi-clipboard2-pulse text-primary me-2"></i>Consultas Médicas
+        <h2 class="h4 fw-bold mb-1 text-dark">
+            Consultas Médicas
         </h2>
-        <p class="text-muted small mb-0">Registro y control de atenciones veterinarias</p>
+        <p class="text-muted small mb-0">Historial y registro de atenciones veterinarias</p>
     </div>
-    <a href="{{ route('consultas.create') }}" class="btn btn-primary shadow-sm">
-        <i class="bi bi-plus-lg me-1"></i> Nueva Consulta
+    <a href="{{ route('consultas.create') }}" class="btn btn-primary">
+        + Nueva Consulta
     </a>
 </div>
 

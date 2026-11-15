@@ -7,24 +7,24 @@
     <div class="col-lg-8">
         <div class="d-flex align-items-center justify-content-between mb-4">
             <div>
-                <h2 class="h3 fw-bold mb-1 text-dark">
-                    <i class="bi bi-plus-circle text-primary me-2"></i>Nueva Consulta Médica
+                <h2 class="h4 fw-bold mb-1 text-dark">
+                    Nueva Consulta Médica
                 </h2>
                 <p class="text-muted small mb-0">Registre la atención veterinaria brindada al paciente</p>
             </div>
             <a href="{{ route('consultas.index') }}" class="btn btn-outline-secondary">
-                <i class="bi bi-arrow-left me-1"></i> Volver al listado
+                &larr; Volver al listado
             </a>
         </div>
 
-        <div class="card shadow-sm">
+        <div class="card">
             <div class="card-body p-4">
                 <form action="{{ route('consultas.store') }}" method="POST">
                     @csrf
 
-                    <h5 class="fw-bold text-primary mb-3">
-                        <i class="bi bi-info-circle me-1"></i> Datos de la Consulta
-                    </h5>
+                    <h6 class="fw-bold text-uppercase text-muted mb-3" style="font-size: 0.75rem; letter-spacing: 0.05em;">
+                        Datos de la Consulta
+                    </h6>
 
                     <div class="row g-3 mb-4">
                         <div class="col-md-6">

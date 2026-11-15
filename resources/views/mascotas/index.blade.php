@@ -5,13 +5,13 @@
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
-        <h2 class="h3 fw-bold mb-1 text-dark">
-            <i class="bi bi-shield-shaded text-primary me-2"></i>Mascotas
+        <h2 class="h4 fw-bold mb-1 text-dark">
+            Mascotas
         </h2>
-        <p class="text-muted small mb-0">Gestión de pacientes registrados en la veterinaria</p>
+        <p class="text-muted small mb-0">Listado y gestión de pacientes de Veterinaria Chacabuco</p>
     </div>
-    <a href="{{ route('mascotas.create') }}" class="btn btn-primary shadow-sm">
-        <i class="bi bi-plus-lg me-1"></i> Registrar Mascota
+    <a href="{{ route('mascotas.create') }}" class="btn btn-primary">
+        + Registrar Mascota
     </a>
 </div>
 

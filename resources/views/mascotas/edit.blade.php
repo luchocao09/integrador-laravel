@@ -7,25 +7,25 @@
     <div class="col-lg-8">
         <div class="d-flex align-items-center justify-content-between mb-4">
             <div>
-                <h2 class="h3 fw-bold mb-1 text-dark">
-                    <i class="bi bi-pencil-square text-primary me-2"></i>Editar Mascota #{{ $mascota->id }}
+                <h2 class="h4 fw-bold mb-1 text-dark">
+                    Editar Mascota #{{ $mascota->id }}
                 </h2>
                 <p class="text-muted small mb-0">Actualice los datos de la mascota o del dueño</p>
             </div>
             <a href="{{ route('mascotas.index') }}" class="btn btn-outline-secondary">
-                <i class="bi bi-arrow-left me-1"></i> Volver al listado
+                &larr; Volver al listado
             </a>
         </div>
 
-        <div class="card shadow-sm">
+        <div class="card">
             <div class="card-body p-4">
                 <form action="{{ route('mascotas.update', $mascota) }}" method="POST">
                     @csrf
                     @method('PUT')
 
-                    <h5 class="fw-bold text-primary mb-3">
-                        <i class="bi bi-tag me-1"></i> Datos de la Mascota
-                    </h5>
+                    <h6 class="fw-bold text-uppercase text-muted mb-3" style="font-size: 0.75rem; letter-spacing: 0.05em;">
+                        Datos de la Mascota
+                    </h6>
                     
                     <div class="row g-3 mb-4">
                         <div class="col-md-6">
@@ -69,9 +69,9 @@
                         </div>
                     </div>
 
-                    <h5 class="fw-bold text-primary mb-3">
-                        <i class="bi bi-person me-1"></i> Datos del Dueño o Responsable
-                    </h5>
+                    <h6 class="fw-bold text-uppercase text-muted mb-3" style="font-size: 0.75rem; letter-spacing: 0.05em;">
+                        Datos del Dueño o Responsable
+                    </h6>
 
                     <div class="row g-3 mb-4">
                         <div class="col-md-6">

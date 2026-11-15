@@ -5,23 +5,23 @@
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
-        <h2 class="h3 fw-bold mb-1 text-dark">
-            <i class="bi bi-person-badge text-primary me-2"></i>Ficha de Paciente: {{ $mascota->nombre }}
+        <h2 class="h4 fw-bold mb-1 text-dark">
+            Ficha de Paciente: {{ $mascota->nombre }}
         </h2>
         <p class="text-muted small mb-0">Información general e historial médico de la mascota</p>
     </div>
     <div class="d-flex gap-2">
         <a href="{{ route('mascotas.index') }}" class="btn btn-outline-secondary">
-            <i class="bi bi-arrow-left me-1"></i> Volver al listado
+            &larr; Volver al listado
         </a>
         <a href="{{ route('mascotas.edit', $mascota) }}" class="btn btn-warning">
-            <i class="bi bi-pencil me-1"></i> Editar Mascota
+            Editar
         </a>
         <form action="{{ route('mascotas.destroy', $mascota) }}" method="POST" class="d-inline" onsubmit="return confirm('¿Está seguro de eliminar a esta mascota y todas sus consultas asociadas?');">
             @csrf
             @method('DELETE')
             <button type="submit" class="btn btn-danger">
-                <i class="bi bi-trash me-1"></i> Eliminar
+                Eliminar
             </button>
         </form>
     </div>
@@ -29,11 +29,11 @@
 
 <div class="row g-4 mb-4">
     <div class="col-md-6">
-        <div class="card shadow-sm h-100">
-            <div class="card-header bg-white py-3">
-                <h5 class="card-title mb-0 fw-bold text-primary">
-                    <i class="bi bi-shield-shaded me-1"></i> Datos de la Mascota
-                </h5>
+        <div class="card h-100">
+            <div class="card-header py-3">
+                <h6 class="card-title mb-0 fw-bold text-dark">
+                    Datos de la Mascota
+                </h6>
             </div>
             <div class="card-body">
                 <ul class="list-group list-group-flush">
@@ -67,11 +67,11 @@
     </div>
 
     <div class="col-md-6">
-        <div class="card shadow-sm h-100">
-            <div class="card-header bg-white py-3">
-                <h5 class="card-title mb-0 fw-bold text-primary">
-                    <i class="bi bi-person-lines-fill me-1"></i> Responsable a Cargo
-                </h5>
+        <div class="card h-100">
+            <div class="card-header py-3">
+                <h6 class="card-title mb-0 fw-bold text-dark">
+                    Responsable a Cargo
+                </h6>
             </div>
             <div class="card-body">
                 <ul class="list-group list-group-flush">
