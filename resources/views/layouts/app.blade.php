@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Sistema de Gestión') - Veterinaria Chacabuco</title>
     
-    <!-- Tipografía Editorial / Humanista: Lora (serif para títulos y marca) + Source Sans 3 (cuerpo, tablas y controles) -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 5 & Icons -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     
@@ -22,9 +22,9 @@
             --bs-font-sans-serif: var(--font-body);
             --bs-body-font-family: var(--font-body);
             --bs-body-color: #272d2a;
-            --bs-body-bg: #f7f6f2; /* Marfil / lino cálido tipo dossier */
+            --bs-body-bg: #f7f6f2; 
 
-            /* Paleta tradicional de clínica: Verde británico / Bosque profundo */
+            
             --brand-primary: #194a3e;
             --brand-primary-hover: #12372e;
             --brand-primary-wash: #ebf2ee;
@@ -54,7 +54,7 @@
             flex: 1;
         }
 
-        /* Navbar estilo sobrio / institucional */
+        
         .app-navbar {
             background-color: var(--brand-dark) !important;
             border-bottom: 2px solid #1f3a33;
@@ -104,7 +104,7 @@
             font-weight: 600;
         }
 
-        /* Títulos elegantes con serifa Lora */
+        
         h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
             font-family: var(--font-heading);
             font-weight: 600;
@@ -112,7 +112,7 @@
             color: #14231f;
         }
 
-        /* Botones refinados */
+        
         .btn {
             font-family: var(--font-body);
             font-weight: 600;
@@ -222,7 +222,7 @@
             font-size: 0.82rem;
         }
 
-        /* Tarjetas estilo dossier clásico */
+        
         .card {
             border: 1px solid var(--brand-border);
             border-radius: 8px;
@@ -240,7 +240,7 @@
             color: #162420;
         }
 
-        /* Tablas */
+        
         .table-responsive {
             border-radius: 8px;
             overflow: hidden;
@@ -276,7 +276,7 @@
             border-bottom: none;
         }
 
-        /* Inputs y Selects */
+        
         .form-control, .form-select {
             border-color: #d5cfc4;
             border-radius: 6px;
@@ -305,7 +305,7 @@
             margin-bottom: 0.35rem;
         }
 
-        /* Textos y Badges */
+        
         .text-primary {
             color: var(--brand-primary) !important;
         }
@@ -346,7 +346,7 @@
             border-color: #dfd8cd !important;
         }
 
-        /* Alertas */
+        
         .alert {
             border-radius: 7px;
             font-size: 0.92rem;
@@ -365,7 +365,7 @@
             color: #8c2424;
         }
 
-        /* Paginador */
+        
         .pagination .page-item .page-link {
             color: var(--brand-primary);
             border-color: #dbd5c9;
@@ -378,7 +378,7 @@
             color: #ffffff;
         }
 
-        /* Footer */
+        
         footer {
             background-color: #ffffff;
             border-top: 1px solid var(--brand-border);
